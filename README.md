@@ -11,11 +11,11 @@
 
 Clone the repository
 
-    https://github.com/iambasanta/lara-ask.git
+    https://github.com/iambasanta/todo.git
 
 Switch to the repo folder
 
-    cd lara-ask
+    cd todo
 
 Install all the dependencies using composer
 
