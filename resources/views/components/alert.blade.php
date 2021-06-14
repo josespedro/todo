@@ -3,7 +3,7 @@
     @if(session()->has('message'))
     <div class="alert alert-success">
         <strong>Success !</strong> <p>{{session('message')}}</p>
-    {{session()->forget('message')}}
+    {{session()->forgot('message')}}
     </div>
     @elseif(session()->has('error'))
     <div class="alert alert-danger">
