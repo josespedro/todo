@@ -1,6 +1,7 @@
 @extends('todos.layout')
 @section('content')
-    <div class="d-flex justify-content-center">
+<div class="d-flex justify-content-center">
+      <a href="{{route('home')}}"><span class="fas fa-home fa-2x text-success p-2"/></a>
       <h1 class="">ToDo List</h1>
       <a href="{{route('todo.create')}}"><span class="fas fa-plus-circle fa-2x text-success p-2"/></a>
     </div>    
