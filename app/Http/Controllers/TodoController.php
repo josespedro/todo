@@ -35,7 +35,7 @@ class TodoController extends Controller
                 $todo->steps()->create(['name'=>$step]);
             }
         }
-        return redirect(route('todo.index'))->with('message','To-Do created successfully !');
+        return redirect(route('todo.index'))->with('message',$todo->title.' created successfully !');
     }
 
     public function edit(Todo $todo)
@@ -63,7 +63,7 @@ class TodoController extends Controller
                 }
             }
         }
-        return redirect(route('todo.index'))->with('message','Updated!!!');
+        return redirect(route('todo.index'))->with('message',$todo->title.' Updated!!!');
     }
 
     public function complete(Todo $todo)
